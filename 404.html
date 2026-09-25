@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#fafafa" />
+  <title>Not found — HeyDoodles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { paper: '#f5f3ec', ink: '#0a0a0a', muted: '#6b6b6b', faint: '#a3a3a3', pi: '#97e727' },
+          fontFamily: {
+            display: ['Jost', 'sans-serif'],
+            sans: ['Montserrat', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    ::selection { background: #0a0a0a; color: #f5f3ec; }
+  </style>
+</head>
+<body class="m-0 bg-paper font-sans text-[15px] leading-[1.5] text-ink antialiased">
+<main class="flex min-h-[100dvh] flex-col items-start justify-center gap-4 px-10 max-md:px-5">
+  <h1 class="m-0 font-display text-[clamp(48px,8vw,110px)] font-extrabold leading-none tracking-[-0.04em]">404</h1>
+  <p class="m-0 text-muted">That page doesn't exist.</p>
+  <a href="./" class="inline-flex items-center gap-2 rounded-full border border-black/15 px-6 py-3 text-[13px] font-medium tracking-[0.06em] text-ink no-underline hover:border-ink">BACK HOME →</a>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

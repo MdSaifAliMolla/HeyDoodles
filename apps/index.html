@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light" />
+  <meta name="theme-color" content="#fafafa" />
+  <title>Apps — HeyDoodles</title>
+  <meta name="description" content="All apps by HeyDoodles." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { paper: '#f5f3ec', ink: '#0a0a0a', muted: '#6b6b6b', faint: '#a3a3a3', pi: '#97e727' },
+          fontFamily: {
+            display: ['Jost', 'sans-serif'],
+            sans: ['Montserrat', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    ::selection {
+      background: #0a0a0a;
+      color: #f5f3ec;
+    }
+  </style>
+</head>
+
+<body class="m-0 bg-paper font-sans text-[15px] leading-[1.5] text-ink antialiased">
+  <div class="flex min-h-[100dvh] flex-col pt-[96px] max-md:pt-[80px]">
+    <header
+      class="fixed left-0 right-0 top-0 z-50 flex min-h-[96px] items-center justify-between gap-4 bg-paper/90 px-[66px] backdrop-blur-md backdrop-saturate-150 max-md:min-h-[80px] max-md:px-[28px]">
+      <a href="../" class="font-display text-[17px] font-extrabold tracking-[0.02em] no-underline">HEYDOODLES<span
+          class="font-normal text-muted">.studio</span></a>
+      <nav class="flex items-center gap-[10px]">
+        <a href="mailto:heydoodleslab@gmail.com"
+          class="rounded-full border border-ink bg-transparent px-[22px] py-[10px] text-[13px] font-semibold tracking-[0.1em] no-underline hover:bg-black/[0.06]">CONTACT</a>
+      </nav>
+    </header>
+    <div class="mx-auto w-full max-w-[1120px] px-10 max-md:px-5">
+      <main>
+        <div class="pb-2 pt-16">
+          <h1 class="m-0 font-display text-[clamp(40px,5vw,64px)] font-extrabold leading-none tracking-[-0.03em]">Apps
+          </h1>
+          <br>
+        </div>
+        <div id="app-list"></div>
+      </main>
+    </div>
+  </div>
+  <div id="snackbar" role="status"
+    class="fixed bottom-6 left-1/2 z-[60] -translate-x-1/2 translate-y-[80px] whitespace-nowrap rounded-full bg-ink px-[22px] py-3 text-[13.5px] font-medium text-paper opacity-0 transition-all duration-300">
+    Copied</div>
+  <script src="../script.js"></script>
+</body>
+
+</html>
